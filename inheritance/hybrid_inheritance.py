@@ -12,12 +12,12 @@ class Z(X):
         print("Z action")
         super().action()
 
-class A(Y, Z):
+class A(Z, Y):
     def action(self):
         print("A action")
         super().action()
 
 a = A()
 a.action()
-print(A.mro())
+print(X .mro())
 

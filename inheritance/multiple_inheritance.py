@@ -33,7 +33,11 @@ class B:
     def show(self):
         print("This is B!")
 
-class C(B,A):
+class D:
+    def show(self):
+        print("This is D!")
+
+class C(D,A,B):
     pass
 
 result = C()

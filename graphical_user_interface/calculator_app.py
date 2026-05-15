@@ -41,6 +41,6 @@ for btn in buttons:
         row += 1
 
 (tk.Button(root, text='C', width=5, height=2,
-          font=('Arial', 14), command=clear).grid(row=row, column=0, columnspan=4, pady=5))
+           font=('Arial', 14), command=clear).grid(row=row, column=0, columnspan=4, pady=5))
 
 root.mainloop()

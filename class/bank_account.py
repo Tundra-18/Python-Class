@@ -1,6 +1,5 @@
 class Bank:
     def __init__(self, owner, balance=0.0):
-        # p1 = Bank(name, initial_balance)
         self.owner = owner
         self.balance = balance
 
