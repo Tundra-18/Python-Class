@@ -7,7 +7,7 @@ class Greeting:
         return self
 
     def __next__(self):
-        if self.index >= len(self.greet):
+        if self.index >= len(self.greet) - 1:
             raise StopIteration
         char = self.greet[self.index]
         self.index += 1

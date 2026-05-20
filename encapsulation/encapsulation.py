@@ -4,10 +4,10 @@
 #         self.balance = balance
 #
 # account = BankAccount(5000)
-# print(f"Balance is",account.balance)
+# print("Balance is",account.balance)
 #
 # account.balance = 6000
-# print(f"Balance is",account.balance)
+# print("Balance is",account.balance)
 
 #with encapsulation
 class BankAccount:

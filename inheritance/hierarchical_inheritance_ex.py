@@ -38,11 +38,15 @@ class Circle(Shape):
         return 3.142 * (self.radius ** 2)
 
 # Test input and output
-rectangle = Rectangle(float(input("Enter width of rectangle: ")), float(input("Enter height of rectangle: ")))
+width_input = float(input("Enter rectangle width :"))
+height_input = float(input("Enter rectangle height :"))
+rectangle = Rectangle(width_input,height_input)
 rectangle.display_area()
 print(rectangle)
 
-triangle = Triangle(float(input("\nEnter base of triangle: ")), float(input("Enter height of triangle: ")))
+base_input = float(input("\nEnter triangle base : "))
+tri_height = float(input("Enter triangle height : "))
+triangle = Triangle(base_input,tri_height)
 triangle.display_area()
 print(triangle)
 

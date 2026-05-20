@@ -6,7 +6,6 @@
 #     def move(self):
 #         print("drive")
 #
-#
 # class Boat:
 #     def __init__(self, brand, model):
 #         self.brand = brand
@@ -14,7 +13,6 @@
 #
 #     def move(self):
 #         print("sail")
-#
 #
 # class Plane:
 #     def __init__(self, brand, model):
@@ -51,7 +49,6 @@ class Boat(Vehicle):
 
     def move(self):
         return "sail!"
-
 
 class Plane(Vehicle):
     def __init__(self, brand, model):
