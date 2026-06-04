@@ -14,7 +14,6 @@ if prices:
     for x in prices:
         print(f"{x} Ks")
     print(f"Enumerated Original Prices : {list(enumerate(prices,start=1))} \n")
-    # list(enumerate(prices))
     while True:
         try:
             discount_input = float(input("Enter Discount in % : "))

@@ -1,13 +1,13 @@
 import tkinter as tk
 
-def show_selected():
-    selected = listbox.get(listbox.curselection())
-    label.config(text=f"You selected : {selected}")
-
 root = tk.Tk()
 root.title("Listbox")
 root.geometry("300x200")
 root.configure(bg='lightblue')
+
+def show_selected():
+    selected = listbox.get(listbox.curselection())
+    label.config(text=f"You selected : {selected}")
 
 listbox = tk.Listbox(root,width=20,height=4)
 items = ["apple","banana","cherry","orange"]

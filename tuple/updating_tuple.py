@@ -1,13 +1,13 @@
-# my_tuple = (10, 20, 30)
-# print(f"Tuple : {my_tuple}")
-#
-# temp_list = list(my_tuple)  # Convert to list
-# print(f"Temp list {temp_list}")
-# temp_list[1] = 99  # Update value
-# print(f"Updated temp list {temp_list}")
-#
-# my_tuple = tuple(temp_list)  # Convert back to tuple
-# print(f"Updated tuple : {my_tuple}")  # Output: (10, 99, 30)
+my_tuple = (10, 20, 30)
+print(f"Tuple : {my_tuple}")
+
+temp_list = list(my_tuple)  # Convert to list
+print(f"Temp list {temp_list}")
+temp_list[1] = 99  # Update value
+print(f"Updated temp list {temp_list}")
+
+my_tuple = tuple(temp_list)  # Convert back to tuple
+print(f"Updated tuple : {my_tuple}")  # Output: (10, 99, 30)
 
 # my_tuple = ("apple", "banana", "cherry")
 # print(f"My tuple : {my_tuple}")

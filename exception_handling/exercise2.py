@@ -6,6 +6,7 @@ def guessing_game():
           "You have 5 attempts!")
     secret_number = random.randint(1,11)
     attempts = 5
+    original_attempts = 5
 
     while True:
         try:
@@ -30,11 +31,10 @@ def guessing_game():
                       f"You have {attempts} attempts left!")
 
             else:
-                print(f"🎉You are correct! Your attempts are {attempts} times!")
+                print(f"You are correct! Your attempts are {original_attempts - attempts + 1} times!")
                 break
 
         except ValueError:
             print("🚫Please only enter a number!")
-
 
 guessing_game()

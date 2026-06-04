@@ -1,14 +1,14 @@
 import tkinter as tk
 
-def submit():
-    name = entry_username.get().strip().title()
-    pwd = entry_pwd.get()
-    label_result.config(text=f"Name : {name}\nPwd : {pwd}")
-
 root = tk.Tk()
 root.title("Layout Example")
 root.geometry("300x300")
 root.resizable(False,False)
+
+def submit():
+    name = entry_username.get().strip().title()
+    pwd = entry_pwd.get()
+    label_result.config(text=f"Name : {name}\nPwd : {pwd}")
 
 frame_header = tk.Frame(root,bg='lightblue')
 frame_header.pack(fill='x')

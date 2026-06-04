@@ -4,21 +4,22 @@ info = {
     "phone": "09000000000",
     "address": "yangon"
 }
-for x in info:
-    print(x)
-print("\n")
-for y in info:
-    print(info[y])
-print("\n")
+# for x in info:
+#     print(x)
+# print("\n")
+# for y in info:
+#     print(info[y])
+# print("\n")
 
 # for x in info.values():
 #     print(x)
 #
 # for x in info.keys():
 #   print(x)
+#
+# for x, y in info.items():
+#     print(f"Key is {x} and Value is {y}")
 
-for x, y in info.items():
-    print(x,y)
 
     
 

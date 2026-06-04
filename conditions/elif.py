@@ -12,13 +12,13 @@
 #     print("Grade: F")
 
 ##Conditional Expressions
-# a = 2
-# b = 330
-# print("A") if a > b else print("B")
-#
-# a = 330
-# b = 330
-# print("a") if a > b else print("a and b are same") if a == b else print("b")
+a = 2
+b = 330
+print("A") if a > b else print("B")
+
+a = 330
+b = 330
+print("a") if a > b else print("a and b are same") if a == b else print("b")
 
 
 

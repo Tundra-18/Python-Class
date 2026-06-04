@@ -11,7 +11,9 @@
 #
 # print("Modified copy : ", copy)
 # print("Original : ", info)
-#
+
+
+
 import  copy
 info = {
     "name": "Zaw Ye Naung",
@@ -22,9 +24,10 @@ info = {
     }
 }
 new_dict = copy.deepcopy(info)
+print(f"Original copy : {new_dict}")
 new_dict["class"]["maths"] = "Stochastics"
 print(f"Original {info}")
-print(f"Copy {new_dict}")
+print(f"Modified copy {new_dict}")
 
 
 

@@ -10,12 +10,12 @@
 # else:
 #     print("x is below 10")
 
-
+#
 a = 33
 b = 200
 
 if b > a:
-  print("Hello")
+  pass
 
 else:
     print("false")

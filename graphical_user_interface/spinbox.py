@@ -1,9 +1,11 @@
 import tkinter as tk
 
-def show_value():
-    label.config(text=f"Value is : {spin.get()}")
 root = tk.Tk()
 root.title("Spinbox")
+root.geometry("400x400")
+
+def show_value():
+    label.config(text=f"Value is : {spin.get()}")
 
 spin = tk.Spinbox(root,from_=0,to=10)
 spin.pack(pady=5)

@@ -1,11 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
 
+root = tk.Tk()
+root.title("Combobox")
+root.geometry("400x400")
+
 def show_choice():
     label.config(text=f"You choose : {combo.get()}")
 
-root = tk.Tk()
-root.title("Combobox")
 
 combo = ttk.Combobox(root,values=["Python","Java","C++","PHP"])
 combo.current(0)
