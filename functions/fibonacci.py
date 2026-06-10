@@ -6,6 +6,7 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
         # recursive case
 
-for i in range(10):
+for i in range(5):
     print(fibonacci(i), end=", ")
 
+# 0,1,2,3,4

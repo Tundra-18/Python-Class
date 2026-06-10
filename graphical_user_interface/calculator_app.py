@@ -1,5 +1,8 @@
 import tkinter as tk
 
+root = tk.Tk()
+root.title("Basic Calculator")
+
 def click(number):
     entry.insert(tk.END, str(number))
 
@@ -14,9 +17,6 @@ def calculate():
     except:
         entry.delete(0, tk.END)
         entry.insert(0, "Error")
-
-root = tk.Tk()
-root.title("Basic Calculator")
 
 entry = tk.Entry(root, width=20, font=('Arial', 18),
                  borderwidth=2, relief="ridge", justify='right')
@@ -40,7 +40,7 @@ for btn in buttons:
         col = 0
         row += 1
 
-(tk.Button(root, text='C', width=5, height=2,
-           font=('Arial', 14), command=clear).grid(row=row, column=0, columnspan=4, pady=5))
+c_button = tk.Button(root, text='C', width=10, height=2,font=('Arial', 14), command=clear)
+c_button.grid(row=row, column=0, columnspan=4, pady=5)
 
 root.mainloop()

@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import filedialog
 
+root = tk.Tk()
+root.title("Open & Read File")
+root.geometry("400x400")
+
 def openfile():
     file = filedialog.askopenfilename(
         filetypes=[("Text Files","*.txt"),("All Files","*.*")]
@@ -10,10 +14,6 @@ def openfile():
             content =f.read()
             text_area.delete('1.0',tk.END)
             text_area.insert(tk.END,content)
-
-
-root = tk.Tk()
-root.title("Open & Read File")
 
 text_area = tk.Text(root,wrap='word',height=15)
 text_area.pack(padx=10,pady=10)

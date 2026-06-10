@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import filedialog
 
+root = tk.Tk()
+root.title("Save File Example")
+
 def save_file():
     filepath = filedialog.asksaveasfilename(
         defaultextension=".txt",
@@ -9,9 +12,6 @@ def save_file():
     if filepath:
         with open(filepath, "w", encoding='utf-8') as file:
             file.write(text_area.get("1.0", tk.END))
-
-root = tk.Tk()
-root.title("Save File Example")
 
 text_area = tk.Text(root, wrap="word", height=15)
 text_area.pack(padx=10, pady=10)

@@ -1,11 +1,11 @@
-def reverse_string(s):
-    if len(s) == 0:
-        return s
+def reverse_string(txt):
+    if len(txt) == 0:
+        return txt
         # base case
     else:
-        return reverse_string(s[1:]) + s[0]
+        return reverse_string(txt[1:]) + txt[0]
         # recursive case
 
-print(reverse_string(input("Enter a string : ")))  # Output: "olleh"
+print(reverse_string("four"))  # Output: "olleh"
 
 

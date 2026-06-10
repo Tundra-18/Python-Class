@@ -11,5 +11,6 @@ def count_case(s):
         elif char.islower():
             lower += 1
     return {"uppercase": upper, "lowercase": lower,"vowels": vowels}
+
 print(count_case(input("Enter a string : ")))
 
